@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моє портфоліо</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .about, .projects, .contact {
+      margin-bottom: 40px;
+    }
+    .about h2, .projects h2, .contact h2 {
+      color: #444;
+    }
+    .projects .project {
+      display: inline-block;
+      width: 30%;
+      margin: 15px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .projects .project img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .project button {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .project button:hover {
+      background-color: #555;
+    }
+    .contact form input, .contact form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .contact form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Моє портфоліо</h1>
+    <p>Вітаю! Я веб-розробник, ось мої роботи.</p>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>Про мене</h2>
+      <p>Привіт! Мене звати Іван, я веб-розробник з 3-хвиллиним досвідом роботи. Моя спеціалізація — створення красивих і функціональних веб-сайтів.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Мої проекти</h2>
+      
+      <div class="project">
+        <img src="C:\Users\home\Desktop\Vs code folder\f4c47fe5-eb26-40e1-a8b6-ded02f547a58.webp" alt="Проект 1">
+        <h3>Проект 1</h3>
+        <p>Опис проекту 1. Це був веб-сайт для малого бізнесу.</p>
+        <button onclick="window.location.href='C:\Users\home\Desktop\Index.Html'">Перейти до проекту 1</button>
+      </div>
+      
+      <div class="project">
+        <img src="C:\Users\home\Desktop\Vs code folder\301f6158-7406-43d1-bd27-986f9fd18c57.webp" alt="Проект 2">
+        <h3>Проект 2</h3>
+        <p>Опис проекту 2. Це була інтерактивна веб-сторінка з використанням JavaScript.</p>
+        <button onclick="window.location.href='https://example2.com'">Перейти до проекту 2</button>
+      </div>
+
+      <div class="project">
+        <img src="C:\Users\home\Pictures\Screenshots\Снимок экрана 2025-02-28 225823.png" alt="Проект 3">
+        <h3>Проект 3</h3>
+        <p>Опис проекту 3. Це було портфоліо для графічного дизайнера.</p>
+        <button onclick="window.location.href='https://example3.com'">Перейти до проекту 3</button>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Контакти</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Ваше ім'я" required>
+        <input type="email" id="email" placeholder="Ваш email" required>
+        <textarea id="message" placeholder="Ваше повідомлення" rows="4" required></textarea>
+        <button type="submit">Відправити</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p style="text-align:center; padding: 20px; background-color: #333; color: white;">© 2025 Моє портфоліо</p>
+  </footer>
+
+  <script>
+    // Обробник форми
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Зупинити відправку форми для демонстрації
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      alert(`Дякуємо за повідомлення, ${name}!\nМи зв'яжемося з вами на ${email}.`);
+    });
+  </script>
+
+</body>
+</html>
